@@ -1,0 +1,96 @@
+.settings{
+    display: flex;
+}
+
+.settingsWrapper{
+    flex:9;
+    margin:20px;
+    padding:20px;
+  
+}
+
+.settingsTitle{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.titleLg{
+    font-size: 30px;
+    color:palevioletred;
+    font-weight: 600;
+    
+}
+
+.titlesm{
+    font-size: 18px;
+    color:tomato;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.profiletitle{
+    font-size: 18px;
+    
+}
+
+.userSettings{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.settingsProfile{
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    
+}
+
+.settingsProfile>img{
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.ppUpdate{
+    font-size: 30px;
+    color: palevioletred;
+    background-color: white;
+    border-radius: 50%;
+    cursor: pointer;  
+}
+
+.userSettings>label{
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.userSettings>input{
+    margin-bottom: 20px;
+    height: 23px;
+    border:none;
+    border-bottom: 1px solid gray;
+    padding:5px;
+    font-size: 18px;
+    outline: none;
+}
+
+.settingUpdate{
+    width: 120px;
+    /* height: 30px; */
+    padding:8px;
+    background-color: teal;
+    border:none;
+    color:white;
+    font-weight: bold;
+    border-radius: 10px;
+    align-self: center;
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 17px;
+}
