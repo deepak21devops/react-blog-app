@@ -15,34 +15,34 @@ export default function SingleBlog() {
                     </h1>
                 </div>
                 <div className="blogAuthorInfo">
-                            <span className="author">Author: <b>Deepak</b></span>
-                            <span className="blogDate">1 Hour Ago</span>
-                    </div>
-                    <p className="blogDesc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt 
-                    inventore non consequatur tenetur? Et repellendus quis fuga a. Voluptates, natus recusandae 
-                    exercitationem ipsam rem beatae expedita modi dolor maxime distinctio reiciendis 
+                    <span className="author">Author: <b>Deepak</b></span>
+                    <span className="blogDate">1 Hour Ago</span>
+                </div>
+                <p className="blogDesc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt
+                    inventore non consequatur tenetur? Et repellendus quis fuga a. Voluptates, natus recusandae
+                    exercitationem ipsam rem beatae expedita modi dolor maxime distinctio reiciendis
                     suscipit officia? Corrupti culpa placeat deleniti soluta autem tempore quia? Repellat atque
-                     blanditiis placeat! Id, minus recusandae! Rem, aliquam.
-                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt 
-                    inventore non consequatur tenetur? Et repellendus quis fuga a. Voluptates, natus recusandae 
-                    exercitationem ipsam rem beatae expedita modi dolor maxime distinctio reiciendis 
+                    blanditiis placeat! Id, minus recusandae! Rem, aliquam.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt
+                    inventore non consequatur tenetur? Et repellendus quis fuga a. Voluptates, natus recusandae
+                    exercitationem ipsam rem beatae expedita modi dolor maxime distinctio reiciendis
                     suscipit officia? Corrupti culpa placeat deleniti soluta autem tempore quia? Repellat atque
-                     blanditiis placeat! Id, minus recusandae! Rem, aliquam.
-                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt 
-                    inventore non consequatur tenetur? Et repellendus quis fuga a. Voluptates, natus recusandae 
-                    exercitationem ipsam rem beatae expedita modi dolor maxime distinctio reiciendis 
+                    blanditiis placeat! Id, minus recusandae! Rem, aliquam.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt
+                    inventore non consequatur tenetur? Et repellendus quis fuga a. Voluptates, natus recusandae
+                    exercitationem ipsam rem beatae expedita modi dolor maxime distinctio reiciendis
                     suscipit officia? Corrupti culpa placeat deleniti soluta autem tempore quia? Repellat atque
-                     blanditiis placeat! Id, minus recusandae! Rem, aliquam.
-                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt 
-                    inventore non consequatur tenetur? Et repellendus quis fuga a. Voluptates, natus recusandae 
-                    exercitationem ipsam rem beatae expedita modi dolor maxime distinctio reiciendis 
+                    blanditiis placeat! Id, minus recusandae! Rem, aliquam.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt
+                    inventore non consequatur tenetur? Et repellendus quis fuga a. Voluptates, natus recusandae
+                    exercitationem ipsam rem beatae expedita modi dolor maxime distinctio reiciendis
                     suscipit officia? Corrupti culpa placeat deleniti soluta autem tempore quia? Repellat atque
-                     blanditiis placeat! Id, minus recusandae! Rem, aliquam.
-                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt 
-                    inventore non consequatur tenetur? Et repellendus quis fuga a. Voluptates, natus recusandae 
-                    exercitationem ipsam rem beatae expedita modi dolor maxime distinctio reiciendis 
+                    blanditiis placeat! Id, minus recusandae! Rem, aliquam.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt
+                    inventore non consequatur tenetur? Et repellendus quis fuga a. Voluptates, natus recusandae
+                    exercitationem ipsam rem beatae expedita modi dolor maxime distinctio reiciendis
                     suscipit officia? Corrupti culpa placeat deleniti soluta autem tempore quia? Repellat atque
-                     blanditiis placeat! Id, minus recusandae! Rem, aliquam.</p>
+                    blanditiis placeat! Id, minus recusandae! Rem, aliquam.</p>
             </div>
         </div>
     )

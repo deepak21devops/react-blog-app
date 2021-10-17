@@ -7,10 +7,10 @@ import './home.css'
 export default function Home() {
     return (
         <div>
-            <Header/>
+            <Header />
             <div className="homeContainer">
-                <Post/>
-                <Sidebar/>
+                <Post />
+                <Sidebar />
             </div>
         </div>
     )

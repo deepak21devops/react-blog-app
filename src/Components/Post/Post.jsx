@@ -4,10 +4,10 @@ import './post.css'
 export default function Post() {
     return (
         <div className="post">
-            <SinglePost/>
-            <SinglePost/>
-            <SinglePost/>
-            <SinglePost/>
+            <SinglePost />
+            <SinglePost />
+            <SinglePost />
+            <SinglePost />
         </div>
     )
 }

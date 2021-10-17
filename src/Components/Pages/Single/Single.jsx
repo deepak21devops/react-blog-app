@@ -5,8 +5,8 @@ import './single.css'
 export default function Single() {
     return (
         <div className="single">
-            <SingleBlog/>
-            <Sidebar/>
+            <SingleBlog />
+            <Sidebar />
         </div>
     )
 }

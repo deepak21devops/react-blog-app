@@ -16,12 +16,12 @@ export default function Register() {
                 <label>Password</label>
                 <input type="password" placeholder="Enter you Password"></input>
                 <button className="loginBtn">Register</button>
-                
+
             </form>
             <Link to="/login" className="link">
-                    <button className="registerBtn">Login</button>
+                <button className="registerBtn">Login</button>
             </Link>
-            
+
         </div>
     )
 }

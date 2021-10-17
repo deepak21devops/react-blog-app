@@ -12,14 +12,14 @@ export default function Sidebar() {
 
                 <div className="sidebarContent">
                     <span className="sidebarTitle">Categories</span>
-                   <ul className="categoryList">
-                         <li className="categoryItems">Life</li>
-                       <li className="categoryItems">Music</li>
-                       <li className="categoryItems">Sports</li>
-                       <li className="categoryItems">Style</li>
-                       <li className="categoryItems">Tech</li>
-                       <li className="categoryItems">Cinema</li>
-                   </ul>
+                    <ul className="categoryList">
+                        <li className="categoryItems">Life</li>
+                        <li className="categoryItems">Music</li>
+                        <li className="categoryItems">Sports</li>
+                        <li className="categoryItems">Style</li>
+                        <li className="categoryItems">Tech</li>
+                        <li className="categoryItems">Cinema</li>
+                    </ul>
                 </div>
 
                 <div className="sidebarContent">
@@ -30,7 +30,7 @@ export default function Sidebar() {
                         <i className="sideIcon fab fa-twitter-square"></i>
                         <i className="sideIcon fab fa-pinterest-square"></i>
                     </div>
-                    </div>
+                </div>
 
             </div>
         </div>
