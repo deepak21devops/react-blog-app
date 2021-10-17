@@ -1,0 +1,79 @@
+.write{
+    display: flex;
+    padding:20px;
+}
+
+.writeContainer{
+   
+}
+
+.writeGroup{
+    /* width: 200vh; */
+    position: relative;
+}
+
+.writeContent{
+    display: flex;
+    align-items: center;
+    margin-left: 150px;
+    margin-bottom: 30px;
+    
+    
+}
+
+.uploadIcon{
+    font-size: 27px;
+    height: 30px;
+    width: 30px;
+    border:2px solid;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.inputTitle{
+    width: 120vh;
+    height: 50px;
+    font-size: 30px;
+    border:none;
+    outline: none;
+}
+
+.writeContent{
+    /* margin-left: 150px; */
+    margin-top: 20px;
+    
+}
+
+.inputText{
+    height: 50vh;
+    width: 100%;
+    border:none;
+    outline: none;
+    font-size: 20px;
+}
+
+.btnPushlish{
+    position: absolute;
+    top:340px;
+    left:88vw;
+    padding:10px;
+    background-color: teal;
+    border:none;
+    color:white;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    
+}
+
+.writeImg{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    margin-left: 150px;
+    border-radius: 10px;
+}
