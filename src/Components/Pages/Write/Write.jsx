@@ -11,11 +11,11 @@ export default function Write() {
                         </label>
                         <input type="file" id="fileInput" style={{display:"none"}}></input>
 
-                        <input className="inputTitle" type="text" placeholder="Title..." autoFocus={true}></input>
+                        <input className="inputTitle" type="text" placeholder="Title" autoFocus={true}></input>
                     </div>
 
                     <div className="writeContent">
-                        <textarea className="inputText" placeholder="Tell Your Story"></textarea>
+                        <textarea className="inputText" placeholder="Tell Your Story..."></textarea>
                         <button className="btnPushlish">Publish</button>
                     </div>
                     
