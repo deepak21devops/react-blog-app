@@ -1,6 +1,9 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import './navbar.css'
 export default function NavBar() {
+
+    const user = true;
     return (
         <div className="navbar">
                 <div className="navLeft">
@@ -11,16 +14,46 @@ export default function NavBar() {
                 </div>
                 <div className="navCenter">
                     <ul className="navList">
-                        <li className="navListItems">HOME</li>
-                        <li className="navListItems">ABOUT</li>
-                        <li className="navListItems">CONTACT</li>
-                        <li className="navListItems">WRITE</li>
-                        <li className="navListItems">LOGOUT</li>
+                        <Link to="/" className="link">
+                            <li className="navListItems">HOME</li>
+                        </Link>
+
+                        <Link to="/" className="link">
+                            <li className="navListItems">ABOUT</li>
+                        </Link>
+
+                        <Link to="/" className="link">
+                            <li className="navListItems">CONTACT</li>
+                        </Link>
+
+                        <Link to="/write" className="link">
+                            <li className="navListItems">WRITE</li>
+                        </Link>
+
+                        <Link to="/" className="link">
+                            <li className="navListItems">LOGOUT</li>
+                        </Link>
+                       
+                       
                     </ul>
                 </div>
                 <div className="navRight">
-                    <img src="https://images.pexels.com/photos/1987301/pexels-photo-1987301.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="" className="navImg" />
-                    <i className="navSearch fas fa-search"></i>
+                    {user ? (
+                        <>
+                         <img src="https://images.pexels.com/photos/1987301/pexels-photo-1987301.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="" className="navImg" />
+                    <i className="navSearch fas fa-search"></i> </>
+                    ) : 
+                    <ul className="navList">
+                        <Link to="/login" className="link">
+                        <li className="navListItems">LOGIN</li>
+                    </Link>
+
+                    <Link to="/register" className="link">
+                        <li className="navListItems">REGISTER</li>
+                    </Link>
+                    </ul>
+                    }
+                   
                 </div>
         </div>
     )
