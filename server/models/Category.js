@@ -1,18 +1,10 @@
 const mongoose = require("mongoose");
 
 const userPost = new mongoose.Schema({
-  username: {
+  name: {
     type: String,
     required: true,
-    unique: true,
-  },
-  email: {
-    type: String,
-    required: true,
-    unique: true,
-  },
-  profileimg: {
-    type: String,
-    default: "",
   },
 });
+
+module.exports = mongoose.model("Category", userPost);
