@@ -7,9 +7,10 @@ import Single from "./Components/Pages/Single/Single";
 import Settings from "./Components/Pages/UserSettings/Settings";
 import Write from "./Components/Pages/Write/Write";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import SingleBlog from "./Components/SingleBlog/SingleBlog";
 
 function App() {
-  const user = true;
+  const user = false;
   return (
     <Router>
       <NavBar />
@@ -43,6 +44,14 @@ function App() {
         <Route path="/single" exact>
           <Single />
         </Route>
+
+        <Route path="/single/:id" exact>
+          <Single />
+        </Route>
+
+        {/* <Route path="/?">
+          <SingleBlog />
+        </Route> */}
       </Switch>
     </Router>
   );

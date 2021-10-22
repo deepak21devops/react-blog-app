@@ -1,54 +1,54 @@
-.singlePost{
-    width: 400px;
-    /* height: 100%; */
-    margin-top: 10px;
-    margin-right: 40px;
-    margin-bottom: 30px;
-    margin-left: 20px;
-   
+.singlePost {
+  width: 400px;
+  /* height: 100%; */
+  margin-top: 10px;
+  margin-right: 40px;
+  margin-bottom: 30px;
+  margin-left: 20px;
 }
 
-.postImg{
-    width: 100%;
-    object-fit: cover;
-    border-radius: 7px;
+.postImg {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 7px;
 }
 
-.postCategory{
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   margin-bottom: 20px;
+.postCategory {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
 }
 
-.postInfo{
-    margin-top: 10px;
-    margin-bottom: 10px;
+.postInfo {
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
-.postData{
-    font-size: 15px;
-    margin-right: 20px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color:gray;
-    font-weight: 600;
-    cursor: pointer;
-   
-}
-
-.postTitle{
-    font-size: 25px;
-    font-weight: bold;
-    margin-bottom: 10px;
+.postData {
+  font-size: 15px;
+  margin-right: 20px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: gray;
+  font-weight: 600;
+  cursor: pointer;
 }
 
-.datePicker{
-    font-size: 15px;
-    color:rgb(117, 110, 110);
-    font-weight: 600;
-    cursor: pointer;
+.postTitle {
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  cursor: pointer;
 }
 
-.postDesc{
-    font-size: 16px;
-    line-height: 25px;
+.datePicker {
+  font-size: 15px;
+  color: rgb(117, 110, 110);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.postDesc {
+  font-size: 16px;
+  line-height: 25px;
 }

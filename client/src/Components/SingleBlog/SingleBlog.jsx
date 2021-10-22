@@ -1,49 +1,58 @@
-import './singleBlog.css'
-
+import "./singleBlog.css";
+import { Link } from "react-router-dom";
+import React, { useState, useEffect } from "react";
+import axios from "axios";
+import { useLocation } from "react-router";
 export default function SingleBlog() {
-    return (
-        <div className="singleBlog">
-            <div className="BlogWrapper">
-                <img className="blogImg" src="https://images.pexels.com/photos/443446/pexels-photo-443446.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="" />
-                <div className="blogInfo">
-                    <h1 className="blogTitle">
-                        Lorem ipsum dolor sit amet.
-                        <div className="blogIconContainer">
-                            <i class="blogIcon fas fa-edit"></i>
-                            <i class="blogIcon far fa-trash-alt"></i>
-                        </div>
-                    </h1>
-                </div>
-                <div className="blogAuthorInfo">
-                    <span className="author">Author: <b>Deepak</b></span>
-                    <span className="blogDate">1 Hour Ago</span>
-                </div>
-                <p className="blogDesc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt
-                    inventore non consequatur tenetur? Et repellendus quis fuga a. Voluptates, natus recusandae
-                    exercitationem ipsam rem beatae expedita modi dolor maxime distinctio reiciendis
-                    suscipit officia? Corrupti culpa placeat deleniti soluta autem tempore quia? Repellat atque
-                    blanditiis placeat! Id, minus recusandae! Rem, aliquam.
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt
-                    inventore non consequatur tenetur? Et repellendus quis fuga a. Voluptates, natus recusandae
-                    exercitationem ipsam rem beatae expedita modi dolor maxime distinctio reiciendis
-                    suscipit officia? Corrupti culpa placeat deleniti soluta autem tempore quia? Repellat atque
-                    blanditiis placeat! Id, minus recusandae! Rem, aliquam.
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt
-                    inventore non consequatur tenetur? Et repellendus quis fuga a. Voluptates, natus recusandae
-                    exercitationem ipsam rem beatae expedita modi dolor maxime distinctio reiciendis
-                    suscipit officia? Corrupti culpa placeat deleniti soluta autem tempore quia? Repellat atque
-                    blanditiis placeat! Id, minus recusandae! Rem, aliquam.
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt
-                    inventore non consequatur tenetur? Et repellendus quis fuga a. Voluptates, natus recusandae
-                    exercitationem ipsam rem beatae expedita modi dolor maxime distinctio reiciendis
-                    suscipit officia? Corrupti culpa placeat deleniti soluta autem tempore quia? Repellat atque
-                    blanditiis placeat! Id, minus recusandae! Rem, aliquam.
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt
-                    inventore non consequatur tenetur? Et repellendus quis fuga a. Voluptates, natus recusandae
-                    exercitationem ipsam rem beatae expedita modi dolor maxime distinctio reiciendis
-                    suscipit officia? Corrupti culpa placeat deleniti soluta autem tempore quia? Repellat atque
-                    blanditiis placeat! Id, minus recusandae! Rem, aliquam.</p>
+  const [post, setPost] = useState({});
+  const location = useLocation().pathname.split("/")[2];
+  console.log(`http://localhost:3001/api/posts/${location}`);
+
+  useEffect(() => {
+    const getPost = async () => {
+      const res = await axios.get(
+        `http://localhost:3001/api/posts/${location}`
+      );
+
+      setPost(res.data);
+    };
+    getPost();
+  }, [location]);
+
+  return (
+    <div className="singleBlog">
+      <div className="BlogWrapper">
+        <img
+          className="blogImg"
+          src="https://images.pexels.com/photos/443446/pexels-photo-443446.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+          alt=""
+        />
+        <div className="blogInfo">
+          <h1 className="blogTitle">
+            {post.title}
+            <div className="blogIconContainer">
+              <i class="blogIcon fas fa-edit"></i>
+              <i class="blogIcon far fa-trash-alt"></i>
             </div>
+          </h1>
         </div>
-    )
+        <div className="blogAuthorInfo">
+          <Link
+            to={`/?user=${post.username}
+          `}
+            className="link"
+          >
+            <span className="author">
+              Author: <b>{post.username}</b>
+            </span>
+          </Link>
+
+          <span className="blogDate">
+            {new Date(post.updatedAt).toDateString()}
+          </span>
+        </div>
+        <p className="blogDesc">{post.description}</p>
+      </div>
+    </div>
+  );
 }
