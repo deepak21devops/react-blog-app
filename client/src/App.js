@@ -8,50 +8,25 @@ import Settings from "./Components/Pages/UserSettings/Settings";
 import Write from "./Components/Pages/Write/Write";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import SingleBlog from "./Components/SingleBlog/SingleBlog";
+import { useContext } from "react";
+import { context } from "./redux/Context";
 
 function App() {
-  const user = false;
+  const { user } = useContext(context);
   return (
     <Router>
       <NavBar />
       <Switch>
-        <Route path="/" exact>
+        <Route exact path="/">
           <Home />
         </Route>
-
-        <Route path="/login" exact>
-          <Login />
-        </Route>
-
-        <Route path="/register" exact>
-          <Register />
-        </Route>
-
-        {user ? (
-          <Route path="/write" exact>
-            <Write />
-          </Route>
-        ) : (
-          <Route path="/write" exact>
-            <Register />
-          </Route>
-        )}
-
-        <Route path="/profile" exact>
-          <Settings />
-        </Route>
-
-        <Route path="/single" exact>
+        <Route path="/register">{user ? <Home /> : <Register />}</Route>
+        <Route path="/login">{user ? <Home /> : <Login />}</Route>
+        <Route path="/write">{user ? <Write /> : <Register />}</Route>
+        <Route path="/settings">{user ? <Settings /> : <Register />}</Route>
+        <Route path="/post/:postId">
           <Single />
         </Route>
-
-        <Route path="/single/:id" exact>
-          <Single />
-        </Route>
-
-        {/* <Route path="/?">
-          <SingleBlog />
-        </Route> */}
       </Switch>
     </Router>
   );

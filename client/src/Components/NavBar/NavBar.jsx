@@ -1,8 +1,14 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
+import { context } from "../../redux/Context";
 import "./navbar.css";
 export default function NavBar() {
-  const user = false;
+  const { user, dispatch } = useContext(context);
+
+  const handleLogout = (e) => {
+    e.preventDefault();
+    dispatch({ type: "LOGOUT" });
+  };
   return (
     <div className="navbar">
       <div className="navLeft">
@@ -29,9 +35,13 @@ export default function NavBar() {
             <li className="navListItems">WRITE</li>
           </Link>
 
-          <Link to="/" className="link">
-            <li className="navListItems">LOGOUT</li>
-          </Link>
+          {user ? (
+            <Link to="/" className="link" onClick={(e) => handleLogout(e)}>
+              <li className="navListItems">LOGOUT</li>
+            </Link>
+          ) : (
+            ""
+          )}
         </ul>
       </div>
       <div className="navRight">
